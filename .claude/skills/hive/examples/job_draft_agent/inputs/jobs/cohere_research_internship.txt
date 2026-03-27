@@ -1,0 +1,19 @@
+{
+    "title": "Research Internship (Spring 2026)",
+    "company": "Cohere",
+    "location": "Toronto, ON",
+    "requirements": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "distributed training",
+        "evaluation",
+        "multimodal models"
+    ],
+    "preferences": [
+        "publications",
+        "PhD",
+        "quantitative methodologies"
+    ],
+    "raw_text": "full job description here..."
+}

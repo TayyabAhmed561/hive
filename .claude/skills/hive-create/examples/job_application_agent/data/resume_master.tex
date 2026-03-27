@@ -1,0 +1,230 @@
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[explicit]{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{anyfontsize}
+\usepackage{palatino}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\definecolor{BrightBlue}{RGB}{0, 0, 139} % Deep Navy Blue
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\setlength{\footskip}{4pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}
+  {\color{BrightBlue}\scshape\large\bfseries}
+  {}{0em}{\underline{#1}}
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}\vspace{-2pt}}
+\newcommand{\classesList}[4]{\item\small{#1 #2 #3 #4}\vspace{-2pt}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\textcolor{BrightBlue}{#1}} & \textbf{\small #2} \\
+      \if\relax\detokenize{#3}\relax\else \textit{\small #3} & \textit{\small #4} \\ \fi
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\textcolor{BrightBlue}{#1}} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\titlespacing*{\section}{0pt}{0.7em}{0.5em}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \begin{tabular}{l}
+    {\fontsize{28}{32}\selectfont\bfseries\textcolor{BrightBlue}{Tayyab Ahmed}} \\[11pt]
+    \small Kitchener-Waterloo, ON
+    \end{tabular}
+    &
+    \begin{tabular}{r}
+        \faPhone\ 519-497-3310 \\
+        \faEnvelope\ \href{mailto:yourpersonalemail@gmail.com}{tayyabahmed561@gmail.com} \\
+        \faLinkedin\ \href{https://linkedin.com/in/tayyabmahmed/}{linkedin.com/in/tayyabmahmed/} \\
+        \faGithub\ \href{https://github.com/TayyabAhmed561}{github.com/TayyabAhmed561} \\
+    \end{tabular}
+\end{tabular*}
+
+
+
+\begin{flushleft}
+\begin{minipage}[t]{0.93\textwidth}
+\small\itshape
+\setbox0=\vbox{%
+%<TAILOR:SUMMARY_START>
+Data-focused machine learning engineer experienced in building end-to-end modeling pipelines and running structured experiments on real-world datasets. Strong foundation in statistical evaluation, cross-validation, and translating research problems into measurable insights.
+%<TAILOR:SUMMARY_END>
+}%
+\color{BrightBlue}\rule{1.5pt}{\dimexpr\ht0+\dp0\relax}%
+\hspace{8pt}%
+\box0
+\end{minipage}
+\end{flushleft}
+
+
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading{Computer Engineering (Co-op)}{Sep. 2024 -- 2029}{University of Guelph}{Guelph, ON}
+\resumeItemListStart
+\resumeItem{Focus Areas: Machine Learning, Deep Learning, Optimization, Statistical Modeling}  \resumeItem{Certifications: Deep Learning Specialization (In Progress), Google ML Certificate (In Progress)}
+  \resumeItem{Leadership Recognition: Toastmasters Youth Leadership Program (House of Commons), FIFA World Cup 26 Starting Lineup Volunteer}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+%<TAILOR:EXPERIENCE_BLOCK_START>
+\resumeSubheading{Machine Learning Engineer}{May 2025 -- Present}{Verismo AI}{Hybrid - Toronto, ON}
+\resumeItemListStart
+  \resumeItem{Designed and evaluated end-to-end machine learning pipelines in \textbf{Python} and \textbf{PyTorch} from problem definition through validation.}
+  \resumeItem{Engineered scalable \textbf{data ingestion and preprocessing pipelines} for microscopy datasets in collaboration with lab researchers.}
+  \resumeItem{Led structured experiments using \textbf{cross-validation} and quantitative error analysis to validate performance across model variants.}
+  \resumeItem{Owned model evaluation strategy and performance benchmarking, iterating based on empirical results and deployment constraints.}
+\resumeItemListEnd
+
+\resumeSubheading{Google Developer Student Club (GDSC) – University of Guelph}{2024 -- Present}{Events Organizer \& Technical Contributor}{Guelph, ON}
+\resumeItemListStart
+  \resumeItem{Co-organized technical workshops and speaker events on \textbf{machine learning}, \textbf{cloud systems}, and \textbf{applied AI}, engaging 100+ students.}
+  \resumeItem{Contributed to technical planning and curriculum design for sessions covering \textbf{Python}, \textbf{API development}, and ML fundamentals.}
+  \resumeItem{Collaborated with student teams to foster a research-oriented and product-building community on campus.}
+\resumeItemListEnd
+
+\resumeSubheading{Embedded Systems Developer (Formula SAE EV)}{2026 -- Present}{Gryphon Racing}{Guelph, ON}
+\resumeItemListStart
+\resumeItem{Developing embedded software for EV subsystems using microcontrollers and real-time sensor data acquisition.}
+\resumeItem{Implementing low-latency processing and safety-aware control logic under performance and reliability constraints.}
+\resumeItem{Collaborating across electrical and mechanical teams to ensure robust hardware--software system integration.}
+\resumeItemListEnd
+
+\resumeSubheading{Software Engineering Intern}{May 2021 -- Aug 2021}{Geotab}{Waterloo, ON}
+\resumeItemListStart
+ \resumeItem{Observed and analyzed large-scale \textbf{cloud ingestion} systems processing \textbf{30+ TB/day} of telematics data.}
+ \resumeItem{Collaborated with engineers using \textbf{C\#, .NET Core, and SQL}, gaining insight into enterprise software design and system reliability.}
+\resumeItemListEnd
+
+\resumeSubheading{Technical Mentor}{July 2022 -- Dec 2025}{STEMOTICS / FIRST Robotics Canada}{Cambridge, ON}
+\resumeItemListStart
+  \resumeItem{Led 20+ workshops on \textbf{embedded systems} and \textbf{IoT}, mentoring students in robotics, navigation, and structured debugging.}
+  \resumeItem{Coached a team to \textbf{2nd place out of 15 teams} at a \textbf{FIRST LEGO League competition} hosted at the University of Waterloo.}
+\resumeItemListEnd
+%<TAILOR:EXPERIENCE_BLOCK_END>
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+%<TAILOR:PROJECTS_BLOCK_START>
+\resumeSubheading{MindSync - EEG-Based Therapy Decision Support System}{Jan, 2025}{}{}
+\resumeItemListStart
+  \resumeItem{Designed and \textbf{trained deep learning models} for noisy physiological time-series data under constrained sample conditions.}
+  \resumeItem{Built structured \textbf{preprocessing} and \textbf{feature extraction pipelines} for high-variance signal inputs.}
+  \resumeItem{Optimized inference workflow for low-latency decision support integration.}
+\resumeItemListEnd
+
+\resumeSubheading{SafeSteps - Pedestrian Safety System}{Feb, 2025}{}{}
+\resumeItemListStart
+  \resumeItem{Developed a \textbf{data-driven safety platform} integrating real-time hazard reports with geospatial data to support safer routing decisions.}
+  \resumeItem{Engineered \textbf{location-based analytics and routing logic} to prioritize hazards based on severity, frequency, and historical trends.}
+  \resumeItem{Built feature-based classification and ranking models to prioritize hazards using severity, frequency, and historical data patterns.}
+
+\resumeItemListEnd
+
+\resumeSubheading{ESV (Endangered Species Visualized)}{June, 2025}{}{}
+\resumeItemListStart
+  \resumeItem{Built a \textbf{data visualization platform} to explore large geospatial datasets and communicate regional biodiversity trends.}
+  \resumeItem{Implemented interactive map layers, heatmaps, and spatial filters to enable \textbf{exploratory data analysis} across Ontario.}
+  \resumeItem{Designed scalable frontend components to support clear communication of insights to non-technical audiences.}
+\resumeItemListEnd
+
+\resumeSubheading{University Management System – Fullstack Java Cloud Application}{Jan--Apr 2025}{}{}
+\resumeItemListStart
+  \resumeItem{Developed a modular \textbf{Java} fullstack application using \textbf{FXML}, OOP design principles, and RESTful architecture.}
+  \resumeItem{Designed and deployed a cloud-backed data layer using \textbf{AWS EC2} and \textbf{MySQL (RDS)} with structured schema modeling.}
+  \resumeItem{Implemented logging, validation, and error-handling mechanisms to ensure reliability and maintainability.}
+\resumeItemListEnd
+%<TAILOR:PROJECTS_BLOCK_END>
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+
+%<TAILOR:SKILLS_BLOCK_START>
+\textbf{Machine Learning \& Computer Vision}{: \textbf{Python}, PyTorch, TensorFlow, Pandas, NumPy, scikit-learn; \textbf{deep learning}, \textbf{single}- and \textbf{multi-modal models},  structured experimentation, cross-validation, statistical evaluation, quantitative error analysis.} \\
+
+\textbf{Software \& Data Systems}{: Java, HTML, CSS, JavaScript, C, C\#, .NET, OOP design, RESTful APIs, modular architecture, SQL; data preprocessing pipelines, feature engineering; Linux, AWS fundamentals, reproducible workflows.} \\
+
+\textbf{Embedded Systems}{: \textbf{C++}, Assembly/MIPS, microcontrollers, real-time sensor processing, cross-layer integration; FPGA, \textbf{VHDL}.} \\
+%<TAILOR:SKILLS_BLOCK_END>
+
+}}
+\end{itemize}
+\vspace{-12pt}
+
+\end{document}

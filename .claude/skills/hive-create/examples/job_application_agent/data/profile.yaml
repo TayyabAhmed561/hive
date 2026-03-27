@@ -1,0 +1,44 @@
+name: "Tayyab Ahmed"
+
+target_roles:
+  - "Machine Learning Intern"
+  - "Research Intern"
+  - "Applied AI Intern"
+
+skills:
+  - "python"
+  - "pytorch"
+  - "tensorflow"
+  - "sql"
+  - "c++"
+  - "machine learning"
+  - "deep learning"
+  - "evaluation"
+  - "multimodal"
+  - "experimentation"
+  - "cross-validation"
+  - "data pipelines"
+  - "embedded systems"
+
+interests:
+  - "llms"
+  - "nlp"
+  - "evaluation"
+  - "multimodal"
+  - "agents"
+
+locations:
+  - "toronto"
+  - "waterloo"
+  - "ontario"
+  - "remote"
+  - "hybrid"
+
+preferred_term_months:
+  - 4
+  - 6
+
+penalties:
+  phd_required: 12
+  publications_required: 8
+  twelve_month_term: 5
